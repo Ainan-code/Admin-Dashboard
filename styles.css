@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Mono ;
+    box-sizing: border-box;
+}
+.body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+
+
+.header {
+    grid-column: 2 / 5;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.sidebar {
+    grid-column: 1 / 1;
+    grid-row: 1 / 5;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 7px;
+    padding: 10px;
+    background-color:#fdba74 ;
+}
+
+
+.title {
+    color: white;
+    font-size: large;
+    display: flex;
+    gap: 7px;
+    
+    
+}
+
+.title > img {
+     background-color: black;
+     justify-self: start;
+     width: 25px;
+     height: 25px;
+   
+}
+
+.navigation  {
+    grid-row: 2 / 4;
+    list-style-type:none;
+    
+    
+}
+
+.navigation ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation ul a {
+   text-decoration: none ;
+   color: white;
+   display: inline-flex;
+   gap: 10px;
+
+}
+
+.navigation ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.branding ul {
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.branding ul li {
+   text-decoration: none ;
+   color: white;
+   display: inline-flex;
+   gap: 10px;
+
+}
+
+.branding ul img {
+    width: 20px;
+    height: 20px;
+}
+
+.main-content {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    background-color: brown;
+    border: 1px solid black;
+}
